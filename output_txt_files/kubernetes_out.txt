@@ -1,0 +1,6 @@
+Pod name and status:
+NAME      READY   STATUS    RESTARTS   AGE
+udacity   1/1     Running   0          25m
+
+Content in main terminal window after run prediction:
+Handling connection for 8000
