@@ -75,7 +75,6 @@ workflows:
               only:
                 - HatWithPins-patch-1
       - lint:
-        branches:
           filters:
             branches:
               only:
