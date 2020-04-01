@@ -13,6 +13,7 @@ setup:
 install:
 	# This should be run from inside a virtualenv
 	pip install --upgrade pip setuptools wheel &&\
+		pip install pylint &&\
 		pip install -r requirements.txt
 
 test:
