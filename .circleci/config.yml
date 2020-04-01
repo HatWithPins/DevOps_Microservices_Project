@@ -14,6 +14,7 @@ jobs:
       - run:
           name: lint dockerfile
           command: |
+            ls
             hadolint Dockerfile
   build:
     docker:
