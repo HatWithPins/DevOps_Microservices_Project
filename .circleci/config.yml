@@ -5,9 +5,6 @@
 version: 2
 jobs:
   lint:
-    branches:
-      only:
-        - HatWithPins-patch-1
     docker:
       - image: hadolint/hadolint
 
@@ -19,9 +16,6 @@ jobs:
           command: |
             docker run --rm -i hadolint/hadolint < Dockerfile
   build:
-    branches:
-      only:
-        - HatWithPins-patch-1
     docker:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
@@ -75,5 +69,11 @@ workflows:
   version: 2
   build-lint:
     jobs:
-      - build
-      - lint
+      - build:
+        branches:
+          only:
+            - HatWithPins-patch-1
+      - lint:
+        branches:
+          only:
+            - HatWithPins-patch-1
