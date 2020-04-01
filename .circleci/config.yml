@@ -74,9 +74,9 @@ workflows:
           filters:
             branches:
               only:
-                - HatWithPins-patch-1
+                - master
       - lint:
           filters:
             branches:
               only:
-                - HatWithPins-patch-1
+                - master
