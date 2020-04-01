@@ -14,8 +14,8 @@ jobs:
       - run:
           name: lint dockerfile
           command: |
-            ls
-            hadolint Dockerfile
+            path = find ~/ -name Dockerfile
+            hadolint $path
   build:
     docker:
       # specify the version you desire here
