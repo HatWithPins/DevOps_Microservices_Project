@@ -8,9 +8,10 @@ jobs:
     docker:
       - image: hadolint/hadolint
 
-    working_directory: ~/
+    working_directory: ~/repo
 
     steps:
+      - checkout
       - run:
           name: lint dockerfile
           command: |
