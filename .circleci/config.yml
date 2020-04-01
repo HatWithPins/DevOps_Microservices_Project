@@ -14,7 +14,7 @@ jobs:
       - run:
           name: lint dockerfile
           command: |
-            docker run --rm -i hadolint/hadolint < Dockerfile
+            hadolint Dockerfile
   build:
     docker:
       # specify the version you desire here
