@@ -70,12 +70,13 @@ workflows:
   build-lint:
     jobs:
       - build:
-        filters:
-          branches:
-            only:
-              - HatWithPins-patch-1
+          filters:
+            branches:
+              only:
+                - HatWithPins-patch-1
       - lint:
         branches:
           filters:
-            only:
-              - HatWithPins-patch-1
+            branches:
+              only:
+                - HatWithPins-patch-1
