@@ -15,8 +15,9 @@ docker:
 working_directory: ~/repo
 
 steps:
-  - checkout
+  checkout:
     post:
+      *****
       - pip install -U pip setuptools virtualenv
 
 # Download and cache dependencies
